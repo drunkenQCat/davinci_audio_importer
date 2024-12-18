@@ -90,4 +90,4 @@ To ensure the project runs correctly, please prepare the following:
 
 Thank you to [fusionscript-stubs](https://github.com/czukowski/fusionscript-stubs) for making scripting truly enjoyable. I love you, czukowski brother.
 
-Thank you to [dftt-timecode](https://github.com/dftt/dftt-timecode) for simplifying many timecode operations. 
+Thank you to [dftt-timecode](https://github.com/OwenYou/dftt_timecode) for simplifying many timecode operations. 

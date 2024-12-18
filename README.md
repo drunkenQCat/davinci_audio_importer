@@ -92,4 +92,4 @@ uv run main.py --folder_path "D:\AudioFiles" --project_name "MyProject"
 
 感谢[fusionscript-stubs](https://github.com/czukowski/fusionscript-stubs)，让我真的Happy scripting，我爱你，czukowski老哥。
 
-感谢[dftt-timecode](https://github.com/dftt/dftt-timecode)，它简化了很多时间码的操作。
+感谢[dftt-timecode](https://github.com/OwenYou/dftt_timecode)，它简化了很多时间码的操作。
