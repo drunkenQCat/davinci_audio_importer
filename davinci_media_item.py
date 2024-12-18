@@ -17,7 +17,7 @@ class DRMediaItem:
         self.fps = float(self.item.GetClipProperty("FPS"))  # pyright: ignore
         self.start_tc = DfttTimecode(
             self.item.GetClipProperty("Start TC"), fps=self.fps  # pyright: ignore
-        )  # pyright: ignore
+        )
         self.end_tc = DfttTimecode(
             self.item.GetClipProperty("End TC"), fps=self.fps  # pyright: ignore
         )

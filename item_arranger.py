@@ -4,6 +4,15 @@ from davinci_media_item import DRMediaItem
 
 
 def _get_item_start_in_frame(item: DRMediaItem):
+    """
+    获取媒体项的起始帧数。
+
+    参数:
+        item (DRMediaItem): 需要获取起始帧数的媒体项。
+
+    返回:
+        int: 媒体项的起始帧数。
+    """
     return item.start_tc.timecode_output("frame")
 
 
@@ -11,8 +20,13 @@ def group_items_by_character_and_track(
     media_items: list[DRMediaItem],
 ) -> defaultdict[str, defaultdict[str, list[DRMediaItem]]]:
     """
-    将 media_items 按照 `character` 和 `track` 分组。
-    返回一个嵌套字典：{character: {track: [items]}}。
+    根据角色（character）和轨道（track）对 media_items 进行分组。
+    
+    参数:
+        media_items (list[DRMediaItem]): 需要分组的媒体项列表。
+    
+    返回:
+        defaultdict[str, defaultdict[str, list[DRMediaItem]]]: 一个嵌套的defaultdict，结构为 {character: {track: [items]}}。
     """
     characters = defaultdict(lambda: defaultdict(list))  # {character: {track: [items]}}
     for item in media_items:
