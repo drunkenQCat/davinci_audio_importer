@@ -3,7 +3,7 @@ from time import sleep
 from typing import Any
 
 from davinci_media_item import DRMediaItem
-from hello import resolve
+from resolve_api_init import RESOLVE
 
 
 def add_wav_files_with_structure(pool: Any, path_of_folder: str) -> list[DRMediaItem]:
@@ -17,7 +17,7 @@ def add_wav_files_with_structure(pool: Any, path_of_folder: str) -> list[DRMedia
     root_folder = pool.GetRootFolder()
     pool.SetCurrentFolder(root_folder)
     sleep(0.1)
-    ms = resolve.GetMediaStorage()
+    ms = RESOLVE.GetMediaStorage()
 
     def create_media_item(current_path: Path):
         # 添加 WAV 文件到媒体池
